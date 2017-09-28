@@ -36,7 +36,7 @@ limitations under the License.
    --scrollbar-border: var(--primary);
 }
 
-.feature_name_tagging_client .app_preview_link_slug,.feature_name_tagging_client .internal_member_link,.feature_name_tagging_client .internal_user_group_link,.feature_name_tagging_client ts-mention{background:#333;}
+.feature_name_tagging_client .app_preview_link_slug,.feature_name_tagging_client .internal_member_link,.feature_name_tagging_client .internal_user_group_link,.feature_name_tagging_client ts-mention ts-mention.mention{background: transparent;color: var(--text-bright);}
 
 h1, h2, h3, h4 {
   color: var(--text);
