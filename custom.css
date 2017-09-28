@@ -16,10 +16,10 @@ limitations under the License.
 
 :root {
    /* Modify these to change your theme colors: */
-   --primary: #09F;
-   --text: #CCC;
-   --background: #080808;
-   --background-elevated: #222;
+   --primary: #CCC;
+   --text: #999;
+   --background: #222;
+   --background-elevated: #444;
 
    /* These should be less important: */
    --background-hover: rgba(255, 255, 255, 0.1);
@@ -35,6 +35,8 @@ limitations under the License.
    --scrollbar-background: #000;
    --scrollbar-border: var(--primary);
 }
+
+.feature_name_tagging_client .app_preview_link_slug,.feature_name_tagging_client .internal_member_link,.feature_name_tagging_client .internal_user_group_link,.feature_name_tagging_client ts-mention{background:#333;}
 
 h1, h2, h3, h4 {
   color: var(--text);
