@@ -34,10 +34,10 @@ document.addEventListener("DOMContentLoaded", function() {
    let customCustomCSS = `
    :root {
       /* Modify these to change your theme colors: */
-      --primary: #09F;
-      --text: #CCC;
-      --background: #080808;
-      --background-elevated: #222;
+      // --primary: #09F;
+      // --text: #CCC;
+      // --background: #080808;
+      // --background-elevated: #222;
    }
    `
 
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
    // Wait for each webview to load
    webviews.forEach(webview => {
       webview.addEventListener('ipc-message', message => {
-         if (message.channel == 'didFinishLoading')
+         if (message.channel == 'didFinishLoading') {
             // Finally add the CSS into the webview
             cssPromise.then(css => {
                let script = `
@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", function() {
                      `
                webview.executeJavaScript(script);
             })
+          }
       });
    });
 });
